@@ -1,1 +1,1 @@
-{"scripts":{"start":"func start"},"dependencies":{"@azure/functions":"^4.5.0","@azure/data-tables":"^13.3.1","uuid":"^11.0.5"},"devDependencies":{"azure-functions-core-tools":"^4.0.6610"}}
+{"scripts":{"start":"func start"},"main":"src/functions/*.js","dependencies":{"@azure/functions":"^4.5.0","@azure/data-tables":"^13.3.1","uuid":"^11.0.5"},"devDependencies":{"azure-functions-core-tools":"^4.0.6610"}}
