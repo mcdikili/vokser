@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { createRoot } from 'react-dom/client';
-import { AlertCircle, CheckCircle2, Clock, Inbox, LifeBuoy, Lock, Plus, Search, ShieldCheck, UserRound } from 'lucide-react';
+import { AlertCircle, CheckCircle2, Clock, Inbox, LifeBuoy, Lock, Plus, Search, UserRound } from 'lucide-react';
 import './styles.css';
 
 async function apiFetch(url, options) {
@@ -107,7 +107,7 @@ function App() {
     <header className="hero">
       <div>
         <span className="eyebrow"><LifeBuoy size={16}/> Vokser Support</span>
-        <h1>Raise and manage customer issues.</h1>
+        <h1>Vokser Issue Tracking</h1>
         <p>Submit an issue related to Coach Anna, the Home page, Behaviours, Motivators, or general functionality.</p>
       </div>
       <nav className="tabs" aria-label="Main navigation">
@@ -146,12 +146,12 @@ function RaiseCase({ form, setForm, submitCase, loading }) {
       </form>
     </section>
     <aside className="card info-panel">
-      <ShieldCheck size={32}/>
-      <h3>Built for Azure Static Web Apps</h3>
-      <p>Frontend routes are handled by Static Web Apps, while <code>/api/cases</code> is served by managed Azure Functions.</p>
+      <img src="/vokser-logo.png" alt="Vokser" style={{width:64,height:64,borderRadius:'50%'}}/>
+      <h3>Vokser for you</h3>
+      <p>Vokser is for the betterment of the managers in action in all dimensions!</p>
       <ul>
-        <li>No server to manage</li>
-        <li>Case data stored in Azure Table Storage</li>
+        <li>Raise and track issues with ease</li>
+        <li>Cases stored securely in Azure Table Storage</li>
         <li>Admin route ready for Azure auth</li>
       </ul>
     </aside>
